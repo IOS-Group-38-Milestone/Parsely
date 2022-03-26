@@ -1,7 +1,7 @@
 Original App Design Project - README Template
 ===
 
-# Recipe Playlist
+# Parsely
 
 ## Table of Contents
 1. [Overview](#Overview)
@@ -14,13 +14,12 @@ Original App Design Project - README Template
 A social media app where users can share their favorite recipes and add categories and tags that help users discover recipes that match their needs.
 
 ### App Evaluation
-[Evaluation of your app across the following attributes]
-- **Category:**
-- **Mobile:**
-- **Story:** 
-- **Market:**
-- **Habit:**
-- **Scope:**
+- **Category:** Food / Social Networking
+- **Mobile:** We aim for this app to be developed for Mobile, but users can also access it through a computer/website. Since it is primarily focused on Mobile, Mobile will likely have more features and a friendly user interface compared to a website.
+- **Story:** Allows the users to search a particular recipe based on tags and categories. Users can also share their favorite recipes and like/dislike recipes shared by other users. 
+- **Market:** Anyone can use this app, but it would be more of an interest to food enthusiasts.
+- **Habit:** Users can use this app often depending on what recipes they are looking for and if they want to share a recipe they loved.
+- **Scope:** First, this will start as a way for users to discover and share their favorite recipes. This app will then evolve to let users create playlists of recipes and recommend new recipes based on their selections. 
 
 ## Product Spec
 
@@ -93,6 +92,7 @@ Preliminary:
     * [ ] User can add filters associated with community
     * [ ] User can create rules for community
     * [ ] **Optional**: The request will be reviewed before finally being created (developers approve community based on description, rules, and whether such a community already exists)
+
 
 ### 3. Navigation
 
