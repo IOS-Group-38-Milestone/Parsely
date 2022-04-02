@@ -126,8 +126,82 @@ Preliminary:
 ## Schema 
 [This section will be completed in Unit 9]
 ### Models
-[Add table of models]
+#### User
+
+   | Property      | Type     | Description |
+   | ------------- | -------- | ------------|
+   | userId      | String   | unique id for the user (default field) |
+   | username        | String | username of the user |
+   | password | String | password of the user |
+   | email         | String     | email of the user |
+   | about         | String     | some description about the user |
+
+#### Recipe
+
+   | Property      | Type     | Description |
+   | ------------- | -------- | ------------|
+   | recipeId      | String   | unique id for the recipe (default field) |
+   | userId | Pointer to User | recipe author
+   | name        | String | name of the recipe |
+   | description | String | description of the recipe |
+   | image | File | image that user posts along with recipe |
+   | likesCount    | Number   | number of likes for the recipe |
+   | createdAt     | DateTime | date when recipe post is created (default field) |
+   | updatedAt     | DateTime | date when recipe post is last updated (default field) |
+
+
+#### Playlist
+
+   | Property      | Type     | Description |
+   | ------------- | -------- | ------------|
+   | playlistId      | String   | unique id for the playlist (default field) |
+   | recipeId      | Pointer to Recipe   | recipe information |
+   | userId | Pointer to User | playlist author
+   | name        | String | name of the playlist |
+   | description | String | description of the playlist |
+   | image | File | playlist cover image |
+   | createdAt     | DateTime | date when playlist is created (default field) |
+   | updatedAt     | DateTime | date when playlist is last updated (default field) |
+   
+#### Community
+
+   | Property      | Type     | Description |
+   | ------------- | -------- | ------------|
+   | communityId      | String   | unique id for the community (default field) |
+   | userId | Pointer to User | community member |
+   | recipeId  | Pointer to Recipe | recipe information |
+   | name        | String | name of the community |
+   | description | String | description of the community |
+   | image | File | community cover image |
+   | createdAt     | DateTime | date when community is created (default field) |
+   
 ### Networking
-- [Add list of network requests by screen ]
-- [Create basic snippets for each Parse network request]
-- [OPTIONAL: List endpoints if using existing API such as Yelp]
+- Login Screen
+    - POST - Sign in
+    - Create/POST - Sign up
+- Home/Feed Screen
+    - Read/GET - Query recipes from communities user is subscribed to
+    - Update/POST - Like a recipe
+    - Update/DELETE - Remove a like
+    - Update/POST - Add a recipe to a playlist
+    - Update/DELETE - Remove recipe from playlist
+- Recipe Details Screen
+    - Update/POST - Like recipe
+    - Update/DELETE - Remove like
+    - Update/POST - Add recipe to a playlist
+    - Update/DELETE - Remove recipe from playlist
+- Create Recipe Screen
+    - Create/POST - Create a new recipe object
+- Playlists Screen
+    - Read/GET - Query playlists where user is author
+    - Create/POST - Create a new playlist object
+- Playlist Members Screen
+    - Update/DELETE - Delete playlist object
+- Account Screen
+    - Read/GET - Query user object
+    - Update/DELETE - Delete user
+- Communities Screen
+    - Read/GET - Query communities
+    - Update/POST - Join community
+- Create Community Screen
+    - Create/POST - Create Community
