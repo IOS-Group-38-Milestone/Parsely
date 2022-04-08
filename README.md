@@ -28,8 +28,8 @@ A social media app where users can share their favorite recipes and add categori
 **Required Must-have Stories**
 
 * [fill in your required user stories here]
-* [ ] User can login/logout of their account
-* [ ] User can create a new account
+* [x] User can login/logout of their account
+* [x] User can create a new account
 * [ ] User can post a recipe and add appropriate tags
 * [ ] User can view existing posts from other users
 * [ ] User can like/dislike these posts, and will be less likely to see poorly received posts
