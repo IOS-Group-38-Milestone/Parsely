@@ -31,10 +31,16 @@ A social media app where users can share their favorite recipes and add categori
 * [x] User can login/logout of their account
 * [x] User can create a new account
 * [x] User can post a recipe and add appropriate tags
+* [x] User can see posted recipes
+* [x] User can take a photo, add a prep Time, cook Time, and post it to the server.
+* [x] User can view the last 20 recipes. 
 * [ ] User can view existing posts from other users
 * [ ] User can like/dislike these posts, and will be less likely to see poorly received posts
 * [ ] User can save recipes they love and view them later
 * [ ] User can search for posts that have certain tags
+
+## 1A. Gif Walkthrough
+<img src='https://imgur.com/WgP0tZc.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 **Optional Nice-to-have Stories**
 
@@ -44,6 +50,7 @@ A social media app where users can share their favorite recipes and add categori
 * [ ] New recipes will be automatically suggested for user playlists
 * [ ] User can join communities around certain dietary or culinary topics / categories and see recipes liked by that community
 * [ ] User can select topics they like when signing up
+
 
 ### 2. Screen Archetypes
 Preliminary:
