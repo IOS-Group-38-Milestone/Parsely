@@ -21,6 +21,8 @@
 		ADF1BDDC90CDDD9F651F8DF1 /* Pods_Parsely.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0556D79EAC9BAB0D79369289 /* Pods_Parsely.framework */; };
 		B5260F8BE4C2B6C5CC49C43C /* Pods_ParselyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD727BC7D321F5ACE5A30CD6 /* Pods_ParselyTests.framework */; };
 		BA70B0BA4B9FE3378997DD95 /* Pods_Parsely_ParselyUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 033653C7D516DEEC9DE60C28 /* Pods_Parsely_ParselyUITests.framework */; };
+		CD04F09C2800E7AE004592E3 /* RecipeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD04F09B2800E7AD004592E3 /* RecipeCell.swift */; };
+		CD04F09E2800E7DD004592E3 /* CreateRecipeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD04F09D2800E7DD004592E3 /* CreateRecipeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +64,8 @@
 		57941D7238D1A61BB4021818 /* Pods-Parsely-ParselyUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Parsely-ParselyUITests.debug.xcconfig"; path = "Target Support Files/Pods-Parsely-ParselyUITests/Pods-Parsely-ParselyUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		5D20FB272A0AF88661C2D897 /* Pods-Parsely-ParselyUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Parsely-ParselyUITests.release.xcconfig"; path = "Target Support Files/Pods-Parsely-ParselyUITests/Pods-Parsely-ParselyUITests.release.xcconfig"; sourceTree = "<group>"; };
 		AF3D241715E7F9BC6295596C /* Pods-Parsely.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Parsely.release.xcconfig"; path = "Target Support Files/Pods-Parsely/Pods-Parsely.release.xcconfig"; sourceTree = "<group>"; };
+		CD04F09B2800E7AD004592E3 /* RecipeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeCell.swift; sourceTree = "<group>"; };
+		CD04F09D2800E7DD004592E3 /* CreateRecipeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateRecipeViewController.swift; sourceTree = "<group>"; };
 		D43021A44B981601092E95F2 /* Pods-Parsely.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Parsely.debug.xcconfig"; path = "Target Support Files/Pods-Parsely/Pods-Parsely.debug.xcconfig"; sourceTree = "<group>"; };
 		EAACF8AB618F5C3E15A05CB8 /* Pods-ParselyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ParselyTests.release.xcconfig"; path = "Target Support Files/Pods-ParselyTests/Pods-ParselyTests.release.xcconfig"; sourceTree = "<group>"; };
 		FD727BC7D321F5ACE5A30CD6 /* Pods_ParselyTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ParselyTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -124,6 +128,8 @@
 				034D811B28007D3C00109660 /* SceneDelegate.swift */,
 				034D811D28007D3C00109660 /* ViewController.swift */,
 				034D811F28007D3C00109660 /* Main.storyboard */,
+				CD04F09B2800E7AD004592E3 /* RecipeCell.swift */,
+				CD04F09D2800E7DD004592E3 /* CreateRecipeViewController.swift */,
 				034D812228007D4000109660 /* Assets.xcassets */,
 				034D812428007D4000109660 /* LaunchScreen.storyboard */,
 				034D812728007D4000109660 /* Info.plist */,
@@ -415,7 +421,9 @@
 				034D814A2800883D00109660 /* LoginViewController.swift in Sources */,
 				034D811E28007D3C00109660 /* ViewController.swift in Sources */,
 				034D814C2800896D00109660 /* FeedViewController.swift in Sources */,
+				CD04F09C2800E7AE004592E3 /* RecipeCell.swift in Sources */,
 				034D811A28007D3C00109660 /* AppDelegate.swift in Sources */,
+				CD04F09E2800E7DD004592E3 /* CreateRecipeViewController.swift in Sources */,
 				034D811C28007D3C00109660 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
