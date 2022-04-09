@@ -30,7 +30,7 @@ A social media app where users can share their favorite recipes and add categori
 * [fill in your required user stories here]
 * [x] User can login/logout of their account
 * [x] User can create a new account
-* [ ] User can post a recipe and add appropriate tags
+* [x] User can post a recipe and add appropriate tags
 * [ ] User can view existing posts from other users
 * [ ] User can like/dislike these posts, and will be less likely to see poorly received posts
 * [ ] User can save recipes they love and view them later
