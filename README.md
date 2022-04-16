@@ -35,7 +35,7 @@ A social media app where users can share their favorite recipes and add categori
 * [x] User can take a photo, add a prep Time, cook Time, and post it to the server.
 * [x] User can view the last 20 recipes. 
 * [ ] User can view existing posts from other users
-* [ ] User can like/dislike these posts, and will be less likely to see poorly received posts
+* [x] User can like/dislike these posts, and will be less likely to see poorly received posts
 * [ ] User can save recipes they love and view them later
 * [ ] User can search for posts that have certain tags
 

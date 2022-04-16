@@ -37,11 +37,13 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
             }
             
         }
-    
     }
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return Recipes.count
     }
+    
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "RecipeCell") as! RecipeCell
         let recipe = Recipes[indexPath.row]
@@ -55,6 +57,19 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
         let urlString = imageFile.url!
         let url = URL(string: urlString)!
         cell.recipePhotoView.af.setImage(withURL: url)
+        cell.recipeId = recipe.objectId
+        
+        let query = PFQuery(className: "User_Favorite_Recipe")
+        query.includeKeys(["recipeId", "userId", "favorited"])
+        query.whereKey("recipeId", equalTo: recipe.objectId!)
+        query.whereKey("userId", equalTo: PFUser.current()!.objectId!)
+        query.findObjectsInBackground() { (objects, error) in
+            if objects!.count != 0 {
+                if(objects![0]["favorited"] as! Bool == true) {
+                    cell.setFavorited(true)
+                }
+            }
+        }
         
         return cell
     }
