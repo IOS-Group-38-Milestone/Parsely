@@ -10,9 +10,10 @@ import Parse
 import AlamofireImage
 import MessageInputBar
 
-class FeedViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class FeedViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UISearchBarDelegate {
    
     
+    @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var tableView: UITableView!
     var Recipes = [PFObject]()
     
@@ -26,8 +27,12 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
+        searchBar.delegate = self
+        
         let query = PFQuery(className: "Recipes")
+        //let test = PFQuery(className: "Recipes"', predicate: )
         query.includeKeys(["name", "cook_time", "prep_time", "tags"])
+        query.whereKey("tags", contains: searchBar.text)
         query.limit = 20
         query.findObjectsInBackground(){ (Recipes, error) in
             if Recipes != nil {
@@ -57,6 +62,12 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
         cell.recipePhotoView.af.setImage(withURL: url)
         
         return cell
+    }
+    
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        
+        print("User search text: \(searchText)")
+        tableView.reloadData()
     }
  
     @IBAction func onLogout(_ sender: Any) {

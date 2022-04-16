@@ -60,6 +60,7 @@ NSString *const _ParseDefaultServerURLString = @"https://api.parse.com/1";
 ///--------------------------------------
 
 - (void)setApplicationId:(NSString *)applicationId {
+
     PFParameterAssert(applicationId.length, @"'applicationId' should not be nil.");
     _applicationId = [applicationId copy];
 }
