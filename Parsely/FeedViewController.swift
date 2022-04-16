@@ -16,32 +16,65 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
     @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var tableView: UITableView!
     var Recipes = [PFObject]()
+    var numberOfRecipes: Int!
+    let myRefreshControl = UIRefreshControl()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.delegate = self
         tableView.dataSource = self
+        searchBar.delegate = self
+        myRefreshControl.addTarget(self, action: #selector(loadRecipes), for: .valueChanged)
+        tableView.refreshControl = myRefreshControl
 
         // Do any additional setup after loading the view.
     }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        searchBar.delegate = self
+        loadRecipes()
         
+    }
+    
+    @objc func loadRecipes(){
+        
+        numberOfRecipes = 20
         let query = PFQuery(className: "Recipes")
         //let test = PFQuery(className: "Recipes"', predicate: )
         query.includeKeys(["name", "cook_time", "prep_time", "tags"])
-        query.whereKey("tags", contains: searchBar.text)
+        print("Search bar text used in query: \(searchBar.text!)")
+        query.whereKey("tags", contains: searchBar.text!)
         query.limit = 20
         query.findObjectsInBackground(){ (Recipes, error) in
             if Recipes != nil {
                 self.Recipes = Recipes!
                 self.tableView.reloadData()
-                
+                self.myRefreshControl.endRefreshing()
             }
             
         }
+        
+    }
+    
+    func loadMoreRecipes(){
+        numberOfRecipes+=20
+        let query = PFQuery(className: "Recipes")
+        //let test = PFQuery(className: "Recipes"', predicate: )
+        query.includeKeys(["name", "cook_time", "prep_time", "tags"])
+        //print("Search bar text used in query: \(searchBar.text!)")
+        query.whereKey("tags", contains: searchBar.text!)
+        query.limit = 20
+        query.findObjectsInBackground(){ (Recipes, error) in
+            if Recipes != nil {
+                for recipe in Recipes! {
+                    self.Recipes.append(recipe)
+                }
+                self.tableView.reloadData()
+                self.myRefreshControl.endRefreshing()
+            }
+            
+        }
+        
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -81,7 +114,9 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
         
-        print("User search text: \(searchText)")
+        //print("User search text: \(searchText)")
+        //print("Search bar text: \(searchBar.text)")
+        loadRecipes()
         tableView.reloadData()
     }
  

@@ -80,7 +80,7 @@ class CreateRecipeViewController: UIViewController, UIImagePickerControllerDeleg
         let tagArray = tagString.components(separatedBy: ",")
         recipe["tags"] = tagArray.map { (tag) -> String in
             (tag.replacingOccurrences(of: " ", with: "")).lowercased()
-        }
+        }.joined(separator:" ")
         
         recipe["author"] = PFUser.current()
         
