@@ -37,7 +37,7 @@ A social media app where users can share their favorite recipes and add categori
 * [ ] User can view existing posts from other users
 * [x] User can like/dislike these posts, and will be less likely to see poorly received posts
 * [ ] User can save recipes they love and view them later
-* [ ] User can search for posts that have certain tags
+* [x] User can search for posts that have certain tags
 
 ## 1A. Gif Walkthrough
 <img src='https://imgur.com/WgP0tZc.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
