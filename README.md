@@ -36,7 +36,7 @@ A social media app where users can share their favorite recipes and add categori
 * [x] User can view the last 20 recipes. 
 * [ ] User can view existing posts from other users
 * [x] User can like/dislike these posts, and will be less likely to see poorly received posts
-* [ ] User can save recipes they love and view them later
+* [x] User can save recipes they love and view them later
 * [x] User can search for posts that have certain tags
 
 ## 1A. Gif Walkthrough
