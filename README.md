@@ -34,13 +34,13 @@ A social media app where users can share their favorite recipes and add categori
 * [x] User can see posted recipes
 * [x] User can take a photo, add a prep Time, cook Time, and post it to the server.
 * [x] User can view the last 20 recipes. 
-* [ ] User can view existing posts from other users
+* [x] User can view existing posts from other users
 * [x] User can like/dislike these posts, and will be less likely to see poorly received posts
 * [x] User can save recipes they love and view them later
 * [x] User can search for posts that have certain tags
 
 ## 1A. Gif Walkthrough
-<img src='https://imgur.com/WgP0tZc.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='https://imgur.com/Y0XgEfX.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 **Optional Nice-to-have Stories**
 
