@@ -130,14 +130,20 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
     }
     
 
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        if sender is UITableViewCell {
+            let cell = sender as! UITableViewCell
+            let indexPath = tableView.indexPath(for: cell)!
+            let recipe = Recipes[indexPath.row]
+            let detailsViewController = segue.destination as! RecipeDetailsViewController
+            detailsViewController.recipe = recipe
+            tableView.deselectRow(at: indexPath, animated: true)
+        }
     }
-    */
+    
 
 }

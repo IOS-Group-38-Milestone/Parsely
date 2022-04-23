@@ -20,6 +20,7 @@
 		034D814C2800896D00109660 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 034D814B2800896D00109660 /* FeedViewController.swift */; };
 		03642AD82813617000BC490A /* FavoriteRecipesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03642AD72813617000BC490A /* FavoriteRecipesViewController.swift */; };
 		03642ADA281361CF00BC490A /* FavoriteRecipeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03642AD9281361CF00BC490A /* FavoriteRecipeCell.swift */; };
+		03642ADC281386F800BC490A /* RecipeDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03642ADB281386F800BC490A /* RecipeDetailsViewController.swift */; };
 		ADF1BDDC90CDDD9F651F8DF1 /* Pods_Parsely.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0556D79EAC9BAB0D79369289 /* Pods_Parsely.framework */; };
 		B5260F8BE4C2B6C5CC49C43C /* Pods_ParselyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD727BC7D321F5ACE5A30CD6 /* Pods_ParselyTests.framework */; };
 		BA70B0BA4B9FE3378997DD95 /* Pods_Parsely_ParselyUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 033653C7D516DEEC9DE60C28 /* Pods_Parsely_ParselyUITests.framework */; };
@@ -63,6 +64,7 @@
 		034D814B2800896D00109660 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		03642AD72813617000BC490A /* FavoriteRecipesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteRecipesViewController.swift; sourceTree = "<group>"; };
 		03642AD9281361CF00BC490A /* FavoriteRecipeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteRecipeCell.swift; sourceTree = "<group>"; };
+		03642ADB281386F800BC490A /* RecipeDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeDetailsViewController.swift; sourceTree = "<group>"; };
 		0556D79EAC9BAB0D79369289 /* Pods_Parsely.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Parsely.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		20D889AD7D91A4A4CF2C8D24 /* Pods-ParselyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ParselyTests.debug.xcconfig"; path = "Target Support Files/Pods-ParselyTests/Pods-ParselyTests.debug.xcconfig"; sourceTree = "<group>"; };
 		57941D7238D1A61BB4021818 /* Pods-Parsely-ParselyUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Parsely-ParselyUITests.debug.xcconfig"; path = "Target Support Files/Pods-Parsely-ParselyUITests/Pods-Parsely-ParselyUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -141,6 +143,7 @@
 				034D814B2800896D00109660 /* FeedViewController.swift */,
 				03642AD72813617000BC490A /* FavoriteRecipesViewController.swift */,
 				03642AD9281361CF00BC490A /* FavoriteRecipeCell.swift */,
+				03642ADB281386F800BC490A /* RecipeDetailsViewController.swift */,
 			);
 			path = Parsely;
 			sourceTree = "<group>";
@@ -427,6 +430,7 @@
 				03642AD82813617000BC490A /* FavoriteRecipesViewController.swift in Sources */,
 				03642ADA281361CF00BC490A /* FavoriteRecipeCell.swift in Sources */,
 				034D814A2800883D00109660 /* LoginViewController.swift in Sources */,
+				03642ADC281386F800BC490A /* RecipeDetailsViewController.swift in Sources */,
 				034D811E28007D3C00109660 /* ViewController.swift in Sources */,
 				034D814C2800896D00109660 /* FeedViewController.swift in Sources */,
 				CD04F09C2800E7AE004592E3 /* RecipeCell.swift in Sources */,
