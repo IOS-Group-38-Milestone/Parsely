@@ -79,6 +79,8 @@ class FavoriteRecipesViewController: UIViewController, UITableViewDelegate, UITa
         cell.prepTimeLabel.text = prepTime
         let cookTime = recipe["cook_time"] as! String
         cell.cookTimeLabel.text = cookTime
+        let recipeTags = recipe["tags"] as! String
+        cell.tagsLabel.text = recipeTags.split(separator: " ").joined(separator: ", ")
         let imageFile = recipe["image"] as! PFFileObject
         let urlString = imageFile.url!
         let url = URL(string: urlString)!

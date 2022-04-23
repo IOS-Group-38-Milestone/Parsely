@@ -43,7 +43,7 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
         //let test = PFQuery(className: "Recipes"', predicate: )
         query.includeKeys(["name", "cook_time", "prep_time", "tags"])
         print("Search bar text used in query: \(searchBar.text!)")
-        query.whereKey("tags", contains: searchBar.text!)
+        query.whereKey("tags", contains: searchBar.text!.lowercased())
         query.limit = 20
         query.findObjectsInBackground(){ (Recipes, error) in
             if Recipes != nil {
@@ -62,7 +62,7 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
         //let test = PFQuery(className: "Recipes"', predicate: )
         query.includeKeys(["name", "cook_time", "prep_time", "tags"])
         //print("Search bar text used in query: \(searchBar.text!)")
-        query.whereKey("tags", contains: searchBar.text!)
+        query.whereKey("tags", contains: searchBar.text!.lowercased())
         query.limit = 20
         query.findObjectsInBackground(){ (Recipes, error) in
             if Recipes != nil {
@@ -91,6 +91,8 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
         cell.prepTimeLabel.text = prepTime
         let cookTime = recipe["cook_time"] as! String
         cell.cookTimeLabel.text = cookTime
+        let recipeTags = recipe["tags"] as! String
+        cell.tagsLabel.text = recipeTags.split(separator: " ").joined(separator: ", ")
         let imageFile = recipe["image"] as! PFFileObject
         let urlString = imageFile.url!
         let url = URL(string: urlString)!
