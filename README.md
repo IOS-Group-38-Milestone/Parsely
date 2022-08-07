@@ -56,45 +56,45 @@ A social media app where users can share their favorite recipes and add categori
 Preliminary:
 
 * Login
-   * [ ] User can login to the app
-   * [ ] User can create an account
-   * [ ] **Optional**: User can select topics they like while creating their account
+   * [x] User can login to the app
+   * [x] User can create an account
+   * [x] **Optional**: User can select topics they like while creating their account
 * Home Page
     * This is a tableview
-   * [ ] User can see recipes and the tags / likes / dislikes associated
-   * [ ] User can select to create a recipe
-   * [ ] User can expand each recipe page modally
-   * [ ] User can infinite scroll through recipes
-   * [ ] User can add filters to the page to only see certain posts
-   * [ ] **Optional**: User can use a search bar to search for a particular recipe
+   * [x] User can see recipes and the tags / likes / dislikes associated
+   * [x] User can select to create a recipe
+   * [x] User can expand each recipe page modally
+   * [x] User can infinite scroll through recipes
+   * [x] User can add filters to the page to only see certain posts
+   * [x] **Optional**: User can use a search bar to search for a particular recipe
 * Recipe Page
-    * [ ] User can see the ingredients, the steps
-    * [ ] User can view a story associated with the recipe (e.g. this was my grandma's favorite dish for thanksgiving blah blah blah)
-    * [ ] User can choose to skip this story
-    * [ ] User can view a set of tips (e.g. you can use more sugar to make cakier cookies, you want to use a very hot skillet, you want to mix the batter very gently, etc.)
-    * [ ] User can skip the tips
+    * [x] User can see the ingredients, the steps
+    * [x] User can view a story associated with the recipe (e.g. this was my grandma's favorite dish for thanksgiving blah blah blah)
+    * [x] User can choose to skip this story
+    * [x] User can view a set of tips (e.g. you can use more sugar to make cakier cookies, you want to use a very hot skillet, you want to mix the batter very gently, etc.)
+    * [x] User can skip the tips
     * [ ] **Optional**: User can post and see comments on the recipe
     * [ ] **Optional**: if the user created this recipe, they can edit or delete it
 * Create a Recipe
     * [ ] User can view a template to help them separate their recipe into logical components: ingredients, steps, story, tips
     * [ ] User can cancel creation of their recipe
 * Playlists
-    * [ ] User can view their playlists of recipes
+    * [x] User can view their playlists of recipes
 * Playlist Page
     * Tableview
-    * [ ] User can see the recipes in the playlist
-    * [ ] User can view each recipe modally
-    * [ ] **Optional**: User can see recommendations for further recipes to add to playlist
+    * [x] User can see the recipes in the playlist
+    * [x] User can view each recipe modally
+    * [x] **Optional**: User can see recommendations for further recipes to add to playlist
 * Account
-    * [ ] User can logout
+    * [x] User can logout
     * [ ] **Optional:** User can activate dark mode
     * [ ] **Optional:** User can view all the recipes they've created
-* Communities
+* Communities (future)
     * [ ] User can view existing communities
     * [ ] User can view a summary of each community modally
     * [ ] User can search for a community by name
     * [ ] User can select an option to create a community
-* Create Community
+* Create Community (future)
     * [ ] User can create a new community and provide a description
     * [ ] User can add filters associated with community
     * [ ] User can create rules for community
